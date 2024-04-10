@@ -1,0 +1,7 @@
+flask
+requests
+beautifulsoup4
+re
+unicodedata
+lxml.html
+python-dotenv
