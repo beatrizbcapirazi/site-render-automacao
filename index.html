@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Automação por Beatriz Capirazi</title>
+    <style>
+        /* Resetando margem e preenchimento do corpo */
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative; /* Adiciona posição relativa ao corpo para facilitar o posicionamento absoluto da faixa verde */
+        }
+
+        /* Centralize o título "Projetos de Automação por Beatriz Capirazi" */
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif; /* Adiciona uma fonte personalizada */
+            background-color: #2E8B57; /* Adiciona uma cor de fundo */
+            color: #fff; /* Define a cor do texto como branco */
+            padding: 20px; /* Adiciona espaço ao redor do título */
+            margin: 0; /* Remove a margem para eliminar o espaço entre o título e as imagens */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona um sombreado sutil */
+        }
+
+        .image-container {
+            display: flex;
+            overflow-x: auto; /* Adicionado para rolar horizontalmente caso haja muitas imagens */
+            position: relative; /* Adiciona posição relativa para que a faixa verde fique abaixo */
+        }
+
+        .image-box {
+            display: flex;
+        }
+
+        .image-box img {
+            width: 300px; /* Amplie o tamanho das imagens */
+            height: auto;
+            margin-right: 10px; /* Adicionado espaçamento entre as imagens */
+            cursor: pointer; /* Muda o cursor para indicar que as imagens são clicáveis */
+        }
+
+        /* Estiliza a faixa verde */
+        .green-bar {
+            background-color: #2E8B57; /* Cor de fundo verde */
+            height: 10px; /* Altura da faixa verde */
+            width: 100%; /* Largura da faixa verde */
+            position: absolute; /* Posiciona absolutamente */
+            bottom: 0; /* Alinha a faixa verde na parte inferior do .image-container */
+            left: 0; /* Alinha a faixa verde à esquerda do .image-container */
+        }
+
+        /* Estilos para o contêiner do projeto */
+        .container {
+            text-align: left; /* Alinha o texto para a esquerda */
+            margin-bottom: 20px; /* Adiciona espaço abaixo do container */
+        }
+
+        /* Estilizando o menu dropdown */
+        select#menuPaginas {
+            background-color: #2E8B57; /* Cor de fundo verde */
+            color: #fff; /* Cor do texto branco */
+            padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Adiciona cantos arredondados */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            font-size: 17px; /* Tamanho da fonte */
+            margin-top: 10px; /* Adiciona espaço acima do menu */
+            width: 30%; /* Define a largura do menu */
+            margin-left: auto; /* Centraliza horizontalmente */
+            margin-right: auto; /* Centraliza horizontalmente */
+            display: block; /* Forçar o bloco para centralizar */
+        }
+        
+        .bio {
+            margin-bottom: 20px; /* Adiciona margem inferior para criar distância entre a bio e o rodapé */
+            text-align: left; /* Alinha o texto para a esquerda */
+        }
+
+        footer {
+            background-color: #2E8B57; /* Cor de fundo verde para o rodapé */
+            color: #fff; /* Cor do texto branco */
+            text-align: center; /* Centraliza o texto */
+            padding: 3px 0; /* Adiciona espaçamento interno no topo e na parte inferior */
+            position: relative; /* Alterado para posição relativa */
+            width: 100%; /* Define a largura do rodapé como 100% da largura da janela do navegador */
+        }
+        
+        .container h2, .container h3, .container p {
+            text-align: left; /* Alinha os títulos e parágrafos para a esquerda */
+        }
+
+        /* Estilo para alinhar os itens */
+        .projeto-list {
+            list-style-type: disc; /* Tipo de marcador: bolinha */
+            padding-left: 20px; /* Adiciona um espaço para a bolinha */
+        }
+
+        .projeto-item {
+            margin-bottom: 10px; /* Espaço entre os itens */
+        }
+
+        .projeto-item b {
+            display: block; /* Para garantir que o texto em negrito fique em uma linha separada */
+        }
+
+        /* Estilo para as imagens de tamanho médio */
+        .projeto-img-medium {
+            width: 200px; /* Define a largura média das imagens */
+            height: auto; /* Mantém a proporção */
+        }
+
+        /* Estilo para a seção "Conheça os projetos" */
+        .projeto-section {
+            display: flex; /* Faz com que os elementos fiquem em linha */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza os itens verticalmente */
+        }
+
+        /* Adiciona preenchimento ao contêiner do projeto */
+        .projeto {
+            padding: 10px; /* Adiciona preenchimento ao contêiner do projeto */
+        }
+
+        /* Centraliza o título "Conheça os projetos" */
+        .titulo-conheca-projetos {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projetos de Automação por Beatriz Capirazi</h1>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagem1">
+            <img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagem2">
+            <img src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagem3">
+            <img src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagem4">
+            <img src="https://images.pexels.com/photos/374560/pexels-photo-374560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagem5">
+        </div>
+    </div>
+
+    <!-- Dropdown menu para seleção das páginas -->
+    <select id="menuPaginas" onchange="redirecionarParaPagina()">
+        <option value="">Selecione uma página</option>
+        <option value="/portfolio">Portfólio de Laura Intrieri</option>
+        <option value="/infos">Informações de Laura Intrieri</option>
+        <option value="/projetos">Projetos (GitHub) de Laura Intrieri</option>
+        <option value="/publicacoes">Publicações de Laura Intrieri</option>
+        <option value="/radaresg">Radar ESG </option>
+    </select>
+
+    <div class="container">
+        <div class="projeto">
+            <h2><i>Sobre o projeto</i></h2>
+            <p>Este projeto é fruto da aula 'Algoritmos de automação', ministrada no Master em Jornalismo de Dados, Automação e Storytelling do Insper. O site tem como objetivo apresentar três projetos distintos desenvolvidos ao longo do trimestre:</p>
+            <ul class="projeto-list">
+                <li class="projeto-item">
+                    <b>Radar ESG: </b> A ferramenta tem como objetivo raspar as últimas notícias das editorias de economia do Ministério da Fazenda, do UOL e do Estadão, permitindo a busca por notícias que contenham a palavra-chave ESG desejada.
+                </li>
+                <li class="projeto-item">
+                    <b>Portfólio Laura Intrieri: </b> Apresenta um resumo profissional da referida jornalista, além dos seus principais trabalhos e projetos na área de jornalismo de dados.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3><i>Conheça os projetos:</i></h3>
+        <div class="projeto-section">
+            <div class="projeto">
+                <a href="http://127.0.0.1:5000/radaresg">
+                    <img class="projeto-img-medium" src="https://images.pexels.com/photos/1296265/pexels-photo-1296265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="ESG">
+                </a>
+                <div class="descricao"><b>Radar ESG</b></div>
+            </div>
+            <div class="projeto">
+                <a href="http://127.0.0.1:5000/portfolio">
+                    <img class="projeto-img-medium" src="https://images.pexels.com/photos/15309647/pexels-photo-15309647/free-photo-of-espaco-do-texto-fundo-vermelho-texto-portfolio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="portfolio">
+                </a>
+                <div class="descricao"><b>Portfólio</b></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bio">
+            <h3><i>Sobre a jornalista responsável</i></h3>
+            <p>Jornalista pós-graduanda em Jornalismo de Dados pelo Insper e especializada em economia pela Fundação Getúlio Vargas (FGV) com interesse em <b>Direitos Humanos</b>, <b>Economia</b> e <b>ESG</b>.</p>
+            <p>Atualmente, é responsável pela cobertura de ESG (sigla em inglês para boas práticas ambientais, sociais e de governança corporativa) no <b>Estadão</b>. Antes, colaborou com <b>UOL, <b>Suno Notícias</b> e <b>Eu Quero Investir</b>.</p>
+            <img src="https://media.licdn.com/dms/image/D4D03AQHAWrhOoVF3Qg/profile-displayphoto-shrink_800_800/0/1695256158011?e=1718236800&v=beta&t=vfNQo7AXHPNr5Tk4TjsC9NsFUjpu0SZ80eoQw1QR4u0" alt="Foto Beatriz Capirazi" width="200">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Beatriz Capirazi. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
