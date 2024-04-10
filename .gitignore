@@ -1,4 +1,5 @@
-credenciais-sheets.json
+config.py
+credenciais-google.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
